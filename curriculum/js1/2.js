@@ -3,11 +3,12 @@
  * @param {number} a
  * @param {number} b
  * @param {number} c
- * @returns {boolean}
  */
 
 const solution = (a, b, c) => {
-  return 0;
+  if (a > b && a > c) return a;
+  if (b > a && b > c) return b;
+  else return c;
 };
 
 module.exports = {

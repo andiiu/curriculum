@@ -6,7 +6,13 @@
  */
 
 const solution = (a) => {
-  return 0;
+  let sum = 0
+  for(let divisors = 2; a > divisors; divisors++){
+    if(a%divisors === 0){
+    sum = sum + divisors
+    }
+  }
+ return sum;
 };
 
 module.exports = {
